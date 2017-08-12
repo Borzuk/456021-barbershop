@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Барбершоп</title>
+  </head>
+  <body>
+
+    <header class="page-header">
+        <nav class="main-navigation">
+          <a class="page-header__logo">
+            <img class="logo" src="http://placehold.it/160x75" width="160" height="75" alt="Барбершоп Бородинский">
+          </a>
+          <ul class="navigation">
+            <li class="navigation__item"><a href="#">Информация</a></li>
+            <li class="navigation__item"><a href="#">Новости</a></li>
+            <li class="navigation__item"><a href="#">Прайс-лист</a></li>
+            <li class="navigation__item navigation__item--current"><a href="#">Магазин</a></li>
+            <li class="navigation__item"><a href="#">Контакты</a></li>
+          </ul>
+          <ul class="user-navigation">
+            <li class="login"><a href="#">Вход</a></li>
+          </ul>
+        </nav>
+    </header>
+
+    <main class="page-content">
+      <h1>Средства для ухода</h1>
+      <ul class="breadcumbs">
+        <li><a href="#">Главная</a></li>
+        <li><a href="#">Магазин</a></li>
+        <li><a>Средства для ухода</a></li>
+      </ul>
+      <section class="filter">
+        <form class="filter__form" method="get" action="/">
+          <fieldset class="filter__group">
+            <legend>Производители:</legend>
+            <label>
+              <input type="checkbox" name="baxter" value="baxter" checked>
+              Baxter of California
+            </label>
+            <label>
+              <input type="checkbox" name="natty" value="natty">
+              Mr Natty
+            </label>
+            <label>
+              <input type="checkbox" name="Suavecito" value="Suavecito" checked>
+              Suavecito
+            </label>
+            <label>
+              <input type="checkbox" name="malin" value="malin">
+              Malin-Goetz
+            </label>
+            <label>
+              <input type="checkbox" name="murray" value="murrays">
+              Murray`s
+            </label>
+            <label>
+              <input type="checkbox" name="americancrew" value="americancrew">
+              American Crew
+            </label>
+          </fieldset>
+          <fieldset class="filter__group">
+            <legend>Группы товаров</legend>
+            <label>
+              <input type="radio" name="products-type" value="shaving" checked>
+              Бритвенные принадлежности
+            </label>
+            <label>
+              <input type="radio" name="products-type" value="care" checked>
+              Средства для ухода
+            </label>
+            <label>
+              <input type="radio" name="products-type" value="accessories" checked>
+              Аксессуары
+            </label>
+          </fieldset>
+        </form>
+      </section>
+      <section class="products__list">
+        <article class="products__item">
+          <img class="products__image" src="http://placehold.it/220x165" width="220" height="165" alt="Набор для путешествий Baxter of California">
+          <span class="products__title">
+            Набор для путешествий "BAXTER OF CALIFORNIA"
+          </span>
+          <span class="products__price">
+            2&nbsp;900&nbsp;руб.
+          </span>
+          <a href="#" class="btn btn__products-buy">Купить</a>
+        </article>
+        <article class="products__item">
+          <img class="products__image" src="http://placehold.it/220x165" width="220" height="165" alt="Увлажняющий кондиционер Baxter of California">
+          <span class="products__title">
+            Увлажняющий кондиционер "BAXTER OF CALIFORNIA"
+          </span>
+          <span class="products__price">
+            750&nbsp;руб.
+          </span>
+          <a href="#" class="btn btn__products-buy">Купить</a>
+        </article>
+        <article class="products__item">
+          <img class="products__image" src="http://placehold.it/220x165" width="220" height="165" alt="Гель для волос Suavecito">
+          <span class="products__title">
+            Гель для волос "SUAVECITO"
+          </span>
+          <span class="products__price">
+            290&nbsp;руб.
+          </span>
+          <a href="#" class="btn btn__products-buy">Купить</a>
+        </article>
+        <article class="products__item">
+          <img class="products__image" src="http://placehold.it/220x165" width="220" height="165" alt="Глина для укладки волос AMERICAN CREW">
+          <span class="products__title">
+            Глина для укладки волос "AMERICAN CREW"
+          </span>
+          <span class="products__price">
+            500&nbsp;руб.
+          </span>
+          <a href="#" class="btn btn__products-buy">Купить</a>
+        </article>
+        <article class="products__item">
+          <img class="products__image" src="http://placehold.it/220x165" width="220" height="165" alt="Гель для волос American crew">
+          <span class="products__title">
+            Гель для волос "AMERICAN CREW"
+          </span>
+          <span class="products__price">
+            300&nbsp;руб.
+          </span>
+          <a href="#" class="btn btn__products-buy">Купить</a>
+        </article>
+        <article class="products__item">
+          <img class="products__image" src="http://placehold.it/220x165" width="220" height="165" alt="Набор для критья Baxter of California">
+          <span class="products__title">
+            Набор для бритья "BAXTER OF CALIFORNIA"
+          </span>
+          <span class="products__price">
+            3&nbsp;900&nbsp;руб.
+          </span>
+          <a href="#" class="btn btn__products-buy">Купить</a>
+        </article>
+        <ul class="pagination">
+          <li class="pagination__item"><a>1</a></li>
+          <li class="pagination__item pagination__item--current"><a href="#">2</a></li>
+          <li class="pagination__item"><a href="#">3</a></li>
+          <li class="pagination__item"><a href="#">4</a></li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__contacts">
+        Барбершоп "Бородинский"
+        Адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+        <a href="#" class="page-footer__link">Как нас найти?</a>
+        Телефон: <a href="#" class="page-footer__phone">+7 (495) 666-02-66</a>
+      </div>
+      <b>Давайте дружить!</b>
+      <div class="social-btn">
+        <a href="#" class="btn btn-vk">В контакте</a>
+        <a href="#" class="btn btn-fb">Facebook</a>
+        <a href="#" class="btn btn-ig">Instagram</a>
+      </div>
+      <div class="copyright">
+        Разработано:
+        <a href="http://htmlacademy.ru" class="authors">htmlacademy.ru</a>
+      </div>
+    </footer>
+
+  </body>
+</html>
