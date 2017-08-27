@@ -71,6 +71,12 @@ a {
   background-color: #663d15;
 }
 
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
 .main-navigation {
   display: flex;
   flex-direction: column;
@@ -82,6 +88,17 @@ a {
   color: #ffffff;
 
   background-color: #000000;
+}
+
+.main-navigation-wrapper {
+  width: 100%;
+  margin-bottom: 60px;
+  background-color: #000000;
+}
+
+.main-navigation-wrapper .container {
+  display: flex;
+  justify-content: space-between;
 }
 
 .site-navigation,
